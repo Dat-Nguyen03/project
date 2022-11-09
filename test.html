@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .product {
+        width: 200px;
+        height: 250px;
+        margin: 0 auto;
+        background-color: #ccc;
+        position: relative;
+        overflow: hidden;
+      }
+      .prd-actions {
+        position: absolute;
+        right: -25px;
+        top: 10px;
+        transition: all 0.5s;
+      }
+      .add-cart {
+        width: 100%;
+        position: absolute;
+        bottom: -50px;
+        transition: all 0.5s;
+      }
+      .add-cart button {
+        width: 100%;
+        background-color: #ff6651;
+        border: none;
+        padding: 15px 0;
+        color: #fff;
+      }
+      .fa-solid {
+        display: block;
+        margin-top: 5px;
+        font-size: 20px;
+        transition: all 0.5s;
+      }
+      .product:hover .prd-actions {
+        right: 10px;
+      }
+      .product:hover .add-cart {
+        bottom: 0;
+      }
+      .fa-solid:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non tempora quia doloremque veniam a provident sit id maiores consequatur consequuntur recusandae, porro, veritatis perferendis quibusdam eaque magnam qui eligendi. Tempora.
+    <div class="prd-actions">
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-eye"></i>
+    </div>
+    <div class="add-cart">
+      <button>add to cart</button>
+    </div>
+  </div>
+  </body>
+</html>
